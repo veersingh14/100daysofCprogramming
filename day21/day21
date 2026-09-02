@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main()
+{
+    int n, first, last, temp, power, result;
+
+    scanf("%d", &n);
+
+    last = n % 10;
+
+    temp = n;
+    power = 1;
+
+    while (temp >= 10)
+    {
+        temp = temp / 10;
+        power = power * 10;
+    }
+
+    first = temp;
+
+    result = n % power;
+    result = result - last;
+    result = result + last * power;
+    result = result - first * power;
+    result = result + first;
+
+    printf("%d", result);
+
+    return 0;
+}
