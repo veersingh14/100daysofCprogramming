@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int main()
-{
+int main() {
     int a[100], n, key;
     int low, high, mid, i;
 
@@ -9,8 +8,7 @@ int main()
     scanf("%d", &n);
 
     printf("Enter elements in sorted order: ");
-    for (i = 0; i < n; i++)
-    {
+    for (i = 0; i < n; i++) {
         scanf("%d", &a[i]);
     }
 
@@ -20,21 +18,15 @@ int main()
     low = 0;
     high = n - 1;
 
-    while (low <= high)
-    {
+    while (low <= high) {
         mid = (low + high) / 2;
 
-        if (a[mid] == key)
-        {
+        if (a[mid] == key) {
             printf("Element found at position %d", mid + 1);
             return 0;
-        }
-        else if (a[mid] < key)
-        {
+        } else if (a[mid] < key) {
             low = mid + 1;
-        }
-        else
-        {
+        } else {
             high = mid - 1;
         }
     }

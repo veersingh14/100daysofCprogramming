@@ -1,15 +1,13 @@
 #include <stdio.h>
 
-int main()
-{
+int main() {
     int a[100], n, x, i, pos;
 
     printf("Enter number of elements: ");
     scanf("%d", &n);
 
     printf("Enter elements in sorted order: ");
-    for (i = 0; i < n; i++)
-    {
+    for (i = 0; i < n; i++) {
         scanf("%d", &a[i]);
     }
 
@@ -18,13 +16,11 @@ int main()
 
     pos = 0;
 
-    while (pos < n && a[pos] < x)
-    {
+    while (pos < n && a[pos] < x) {
         pos++;
     }
 
-    for (i = n; i > pos; i--)
-    {
+    for (i = n; i > pos; i--) {
         a[i] = a[i - 1];
     }
 
@@ -32,8 +28,7 @@ int main()
     n++;
 
     printf("Array after insertion: ");
-    for (i = 0; i < n; i++)
-    {
+    for (i = 0; i < n; i++) {
         printf("%d ", a[i]);
     }
 
