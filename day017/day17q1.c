@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int main()
-{
+int main() {
     int num, temp, digit, sum = 0;
 
     printf("Enter a number: ");
@@ -9,8 +8,7 @@ int main()
 
     temp = num;
 
-    while (temp > 0)
-    {
+    while (temp > 0) {
         digit = temp % 10;
         sum = sum + digit * digit * digit;
         temp = temp / 10;
