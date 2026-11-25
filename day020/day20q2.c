@@ -1,13 +1,11 @@
 #include <stdio.h>
 
-int main()
-{
+int main() {
     int n, digit, result = 0, place = 1;
 
     scanf("%d", &n);
 
-    while (n > 0)
-    {
+    while (n > 0) {
         digit = n % 10;
 
         if (digit == 0)

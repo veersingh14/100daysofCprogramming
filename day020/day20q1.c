@@ -1,17 +1,14 @@
 #include <stdio.h>
 
-int main()
-{
+int main() {
     int n, digit, product = 1;
 
     scanf("%d", &n);
 
-    while (n > 0)
-    {
+    while (n > 0) {
         digit = n % 10;
 
-        if (digit % 2 != 0)
-        {
+        if (digit % 2 != 0) {
             product = product * digit;
         }
 
@@ -22,4 +19,3 @@ int main()
 
     return 0;
 }
-
