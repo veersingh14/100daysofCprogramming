@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int main()
-{
+int main() {
     int n, first, last, digits, power, middle, result;
 
     scanf("%d", &n);
@@ -11,8 +10,7 @@ int main()
     digits = 0;
     int temp = n;
 
-    while (temp >= 10)
-    {
+    while (temp >= 10) {
         temp = temp / 10;
         digits++;
     }
@@ -20,8 +18,7 @@ int main()
     first = temp;
 
     power = 1;
-    for (int i = 1; i <= digits; i++)
-    {
+    for (int i = 1; i <= digits; i++) {
         power = power * 10;
     }
 
