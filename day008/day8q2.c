@@ -7,11 +7,9 @@ int main() {
 
     if (a >= b && a >= c) {
         printf("Largest is %d", a);
-    }
-    else if (b >= a && b >= c) {
+    } else if (b >= a && b >= c) {
         printf("Largest is %d", b);
-    }
-    else {
+    } else {
         printf("Largest is %d", c);
     }
 
