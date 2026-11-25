@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int main()
-{
+int main() {
     int seconds, hours, minutes, remaining;
 
     scanf("%d", &seconds);

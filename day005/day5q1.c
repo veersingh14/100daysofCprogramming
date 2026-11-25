@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int main()
-{
+int main() {
     float p, r, t;
     float si, ci, amount;
     int i;
@@ -12,8 +11,7 @@ int main()
 
     amount = p;
 
-    for (i = 1; i <= t; i++)
-    {
+    for (i = 1; i <= t; i++) {
         amount = amount + (amount * r / 100);
     }
 
