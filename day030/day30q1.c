@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int main()
-{
+int main() {
     int n, i;
     int a[100];
     int even = 0, odd = 0;
@@ -9,20 +8,15 @@ int main()
     scanf("%d", &n);
 
     // Read array elements
-    for (i = 0; i < n; i++)
-    {
+    for (i = 0; i < n; i++) {
         scanf("%d", &a[i]);
     }
 
     // Count even and odd numbers
-    for (i = 0; i < n; i++)
-    {
-        if (a[i] % 2 == 0)
-        {
+    for (i = 0; i < n; i++) {
+        if (a[i] % 2 == 0) {
             even++;
-        }
-        else
-        {
+        } else {
             odd++;
         }
     }
